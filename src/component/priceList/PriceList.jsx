@@ -71,7 +71,7 @@ const PriceList = () => {
 
     return (
 
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-8 text-center text-white">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-8 text-center my-10 text-white">
             {
                 priceListData.map(product => <PriceOfProduct key={product.id} product={product}></PriceOfProduct> )
             }

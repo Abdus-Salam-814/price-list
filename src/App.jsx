@@ -1,6 +1,9 @@
+import MyChart from "./component/Chart/MyChart"
 import DaisyNavbar from "./component/daisyNav/DaisyNavbar"
 import Nav from "./component/nav/Nav"
 import PriceList from "./component/priceList/PriceList"
+
+
 
 function App() {
  
@@ -16,6 +19,9 @@ function App() {
       <DaisyNavbar></DaisyNavbar>
 
       <PriceList></PriceList>
+      <MyChart></MyChart>
+
+     
 
     
     </>

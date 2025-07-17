@@ -3,7 +3,7 @@ const PriceOfProduct = ({ product }) => {
   const { name, price, billingCycle, features } = product;
 
   return (
-    <div className="bg-blue-400 p-12 space-y-6 rounded mt-10 mx-3">
+    <div className="bg-blue-400 p-8 space-y-12 rounded  mx-3">
       <h2>
         <span className="text-7xl">{price}</span>/
         <span className="text-2xl">{billingCycle}</span>
@@ -19,8 +19,10 @@ const PriceOfProduct = ({ product }) => {
           </li>
         ))}
       </ul>
-      <button className="btn btn-wide  text-white font-bold bg-green-600 hover:bg-green-900 duration-1000 rounded-2xl
+    <div className="flex justify-center items-center">
+    <button className="btn w-3/4  text-white font-bold bg-green-600 hover:bg-green-900 duration-1000 rounded-xl
       ">Buy Now</button>
+    </div>
     </div>
   );
 };
