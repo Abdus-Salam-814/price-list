@@ -1,5 +1,6 @@
 import DaisyNavbar from "./component/daisyNav/DaisyNavbar"
 import Nav from "./component/nav/Nav"
+import PriceList from "./component/priceList/PriceList"
 
 function App() {
  
@@ -13,6 +14,8 @@ function App() {
       <Nav></Nav>
 
       <DaisyNavbar></DaisyNavbar>
+
+      <PriceList></PriceList>
 
     
     </>
