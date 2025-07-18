@@ -1,3 +1,4 @@
+import Axios from "./component/axios/Axios"
 import MyChart from "./component/Chart/MyChart"
 import DaisyNavbar from "./component/daisyNav/DaisyNavbar"
 import Nav from "./component/nav/Nav"
@@ -20,7 +21,7 @@ function App() {
 
       <PriceList></PriceList>
       <MyChart></MyChart>
-
+    <Axios></Axios>
      
 
     
