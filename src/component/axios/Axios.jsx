@@ -36,7 +36,7 @@ const Axios = () => {
           };
           return obj;
         });
-        console.log(phoneWithFakeData);
+        // console.log(phoneWithFakeData);
         setPhone(phoneWithFakeData);
         setLoding(false)
       });
@@ -47,9 +47,25 @@ const Axios = () => {
 
       <Phone phone={phones}></Phone>
   
+     <div className="text-amber-600 flex gap-40">
+     {
+        loding &&  < BeatLoader c/>
+      }
+
+
+      {
+        loding &&  <BounceLoader/>
+      }
+      {
+        loding &&  <ClipLoader/>
+      }
       {
         loding &&  <BeatLoader/>
       }
+      {
+        loding &&  <BeatLoader/>
+      }
+     </div>
       <ResponsiveContainer width="100%" height={400}>
         <BarChart data={phones}>
           <XAxis dataKey="name" />

@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul className={`flex-col md:flex-row flex justify-center items-center gap-6 absolute md:static    ${open ? 'top-48 right-0 rounded-3xl' : '-top-98 right-0' }  bg-amber-100 p-6  duration-1000`}>
 
           {
-                routes.map(link => <Link link={link} ></Link>)
+                routes.map(link => <Link key={link.id} link={link} ></Link>)
             }
           </ul>
         </nav>
